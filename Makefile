@@ -1,6 +1,6 @@
 # Compilation requires linking the ws2_32 lib.
 
-FLAGS= -s -ffunction-sections -fdata-sections -Wno-write-strings -fno-exceptions -fmerge-all-constants -static-libstdc++ -static-libgcc
+FLAGS= -s -ffunction-sections -fdata-sections -Wno-write-strings -fno-exceptions -fmerge-all-constants -static-libstdc++ -static-libgcc -mwindows
 CC= x86_64-w64-mingw32-gcc
 
 bot.exe: main.c modules.c main.h modules.h 
